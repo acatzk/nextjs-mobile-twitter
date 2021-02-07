@@ -12,5 +12,7 @@ const Messages = () => {
     </>
   )
 }
+
+Messages.headerTitle = 'Messages'
  
 export default Messages;

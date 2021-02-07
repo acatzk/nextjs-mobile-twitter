@@ -12,5 +12,7 @@ const Explore = () => {
     </>
   )
 }
+
+Explore.headerTitle = 'Search'
  
 export default Explore;

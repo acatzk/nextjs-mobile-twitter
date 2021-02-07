@@ -12,5 +12,7 @@ const Notifications = () => {
     </>
   )
 }
+
+Notifications.headerTitle = 'Notifications'
  
 export default Notifications;
