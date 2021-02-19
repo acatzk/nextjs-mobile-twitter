@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Messages = () => {
+export default function MessagesPage () {
   return ( 
     <>
       <Head>
@@ -13,6 +13,10 @@ const Messages = () => {
   )
 }
 
-Messages.headerTitle = 'Messages'
- 
-export default Messages;
+MessagesPage.headerOptions = (
+  <div className="flex items-center w-full">
+    <div className="flex items-center">
+      <span className="ml-6 text-lg font-extrabold">Messages</span>
+    </div>
+  </div>
+)
