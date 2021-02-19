@@ -1,5 +1,6 @@
-import Footer from "../components/Footer"
-import '../styles/globals.css'
+import '~/styles/globals.css'
+import Footer from '~/components/Footer'
+import PerfectScroll from '~/lib/PerfectScrollbar'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,9 +12,9 @@ function MyApp({ Component, pageProps }) {
                 />
           <span className="ml-6 text-lg font-extrabold">{ Component.headerTitle }</span>
         </header>
-        <main className="flex-1 overflow-y-scroll">
-          <Component { ...pageProps } />
-        </main>
+          <main className="flex-1 overflow-y-hidden">
+            <PerfectScroll chilren={ <Component { ...pageProps } /> }/>
+          </main>
         <Footer />
       </div>
     </div>
