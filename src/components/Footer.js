@@ -1,6 +1,6 @@
 import { Link } from './Link'
 
-const Footer = () => {
+export default function Footer () {
   return (
     <footer className="flex items-center border-t border-gray-200">
       <Link
@@ -9,7 +9,7 @@ const Footer = () => {
       >
         {({ isActive }) =>
           isActive ? (
-            <HomeIcon className="p-px text-blue-500 w-7 h-7" />
+            <HomeIcon className="p-px text-twitter-blue w-7 h-7" />
           ) : (
             <HomeIconEmpty className="p-px text-gray-500 w-7 h-7" />
           )
@@ -21,7 +21,7 @@ const Footer = () => {
       >
         {({ isActive }) =>
           isActive ? (
-            <SearchIcon className="p-px text-blue-500 w-7 h-7" />
+            <SearchIcon className="p-px text-twitter-blue w-7 h-7" />
           ) : (
             <SearchIconEmpty className="p-px text-gray-500 w-7 h-7" />
           )
@@ -33,7 +33,7 @@ const Footer = () => {
       >
         {({ isActive }) =>
           isActive ? (
-            <BellIcon className="p-px text-blue-500 w-7 h-7" />
+            <BellIcon className="p-px text-twitter-blue w-7 h-7" />
           ) : (
             <BellIconEmpty className="p-px text-gray-500 w-7 h-7" />
           )
@@ -45,7 +45,7 @@ const Footer = () => {
       >
         {({ isActive }) =>
           isActive ? (
-            <MailboxIcon className="p-px text-blue-500 w-7 h-7" />
+            <MailboxIcon className="p-px text-twitter-blue w-7 h-7" />
           ) : (
             <MailboxIconEmpty className="p-px text-gray-500 w-7 h-7" />
           )
@@ -153,5 +153,3 @@ function MailboxIconEmpty({ className }) {
     </svg>
   )
 }
- 
-export default Footer
