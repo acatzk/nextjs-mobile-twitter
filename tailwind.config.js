@@ -9,7 +9,8 @@ module.exports = {
         sans: ["Inter", ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        'twitter-blue': '#1da1f2'
+        'twitter-blue': '#1da1f2',
+        'twitter-active': '#cbe6f7'
       }
     },
   },
