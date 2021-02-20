@@ -2,7 +2,7 @@ import { Link } from './Link'
 
 export default function Footer () {
   return (
-    <footer className="flex items-center border-t border-gray-200">
+    <footer className="flex items-center border-t border-gray-100">
       <Link
         href="/"
         className="flex items-center justify-center w-1/4 py-3"

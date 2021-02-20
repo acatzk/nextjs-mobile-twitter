@@ -4,7 +4,7 @@ import PerfectScroll from '~/lib/PerfectScrollbar'
 
 export default function Layout ({ Component, pageProps, chilren }) {
   return (
-    <div className="flex h-screen bg-gray-200">
+    <div className="flex h-screen">
       <div className="flex flex-col justify-between max-w-sm w-full mx-auto bg-white shadow-lg rounded-md">
         <NavBar headerOptions={ Component.headerOptions }>
           { chilren }

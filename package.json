@@ -15,6 +15,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-perfect-scrollbar": "^1.5.8",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.2",
+    "tailwindcss-line-clamp": "^1.0.5"
   }
 }
