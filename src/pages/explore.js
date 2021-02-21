@@ -6,8 +6,115 @@ export default function ExplorePage () {
       <Head>
         <title>Explore / Twitter</title>
       </Head>
-      <div className="w-full">
-        <h1>Explore here</h1>
+      <div className="bg-gray-100 w-full min-h-screen">
+        <div className="relative">
+          <div className="flex-shrink-0">
+            <img src="https://pbs.twimg.com/semantic_core_img/1255897267510231040/y4xyKwwd?format=jpg&name=900x900"/>
+          </div>
+          <div className="absolute text-white p-4 bottom-0">
+            <p className="text-sm">Covid-19 &middot; LIVE</p>
+            <h1 className="text-2xl font-semibold leading-tight">Updates on the Covid-19</h1>
+            <h2 className="text-2xl font-semibold">situation in the Philippines</h2>
+          </div>
+        </div>
+        <div className="my-2 bg-white">
+          <div className="text-xl font-semibold px-4 py-2.5 text-gray-800 border-b border-t">
+            Trends for you
+          </div>
+          <div className="divide-y">
+            <div className="px-4 transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+              <div className="flex items-start justify-between text-base py-1">
+                <div className="space-y-2 py-2">
+                  <div className="flex flex-col space-y-1">
+                    <span className="font-medium text-gray-600 text-xs tracking-wide">Trending in Philippines</span>
+                    <span className="font-semibold text-sm uppercase text-gray-800">BBS ELLA</span>
+                  </div>
+                  <span className="tracking-wide font-medium text-xs text-gray-600">15.2K Tweets</span>
+                </div>
+                <div className="-mx-2">
+                  <button className="flex-shrink-0 p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle>
+                      <circle cx="19" cy="12" r="2"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="px-4 transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+              <div className="flex flex-col space-y-1 py-3 text-sm">
+                <span className="font-semibold text-gray-800">#TMPusuan</span>
+                <span className="text-gray-600 tracking-wide">Push mo ang iba't ibang love sa Samahang Pina-Easy ng TM! </span>
+                <div className="flex items-center space-x-2">
+                  <span>
+                    <svg className="w-3 h-3 fill-current text-gray-500 rounded" viewBox="0 0 24 24"><path d="M20.75 2H3.25C2.007 2 1 3.007 1 4.25v15.5C1 20.993 2.007 22 3.25 22h17.5c1.243 0 2.25-1.007 2.25-2.25V4.25C23 3.007 21.993 2 20.75 2zM17.5 13.504c0 .483-.392.875-.875.875s-.875-.393-.875-.876V9.967l-7.547 7.546c-.17.17-.395.256-.62.256s-.447-.086-.618-.257c-.342-.342-.342-.896 0-1.237l7.547-7.547h-3.54c-.482 0-.874-.393-.874-.876s.392-.875.875-.875h5.65c.483 0 .875.39.875.874v5.65z"></path></svg>
+                  </span>
+                  <span className="text-gray-600 font-medium text-xs">Promoted by TM Tambayan</span>
+                </div>
+              </div>
+            </div>
+            <div className="px-4 transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+              <div className="flex items-start justify-between text-base py-1">
+                <div className="space-y-2 py-2">
+                  <div className="flex flex-col space-y-1">
+                    <span className="font-medium text-gray-600 text-xs tracking-wide">Trending in Philippines</span>
+                    <span className="font-semibold text-sm uppercase text-gray-800">Baguio</span>
+                  </div>
+                  <span className="tracking-wide font-medium text-xs text-gray-600">4,047 Tweets</span>
+                </div>
+                <div className="-mx-2">
+                  <button className="flex-shrink-0 p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle>
+                      <circle cx="19" cy="12" r="2"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="px-4 transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+              <div className="flex items-start justify-between text-base py-1">
+                <div className="space-y-2 py-2">
+                  <div className="flex flex-col space-y-1">
+                    <span className="font-medium text-gray-600 text-xs tracking-wide">K-pop &middot; Trending</span>
+                    <span className="font-semibold text-sm uppercase text-gray-800">Congratulations Jimin</span>
+                  </div>
+                  <span className="tracking-wide font-medium text-xs text-gray-600">10.8K Tweets</span>
+                </div>
+                <div className="-mx-2">
+                  <button className="flex-shrink-0 p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle>
+                      <circle cx="19" cy="12" r="2"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="px-4 transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+              <div className="flex items-start justify-between text-base py-1">
+                <div className="space-y-2 py-2">
+                  <div className="flex flex-col space-y-1">
+                    <span className="font-medium text-gray-600 text-xs tracking-wide">Trending in Philippines</span>
+                    <span className="font-semibold text-sm uppercase text-gray-800">#MewSuppasit</span>
+                  </div>
+                  <span className="tracking-wide font-medium text-xs text-gray-600">460K Tweets</span>
+                </div>
+                <div className="-mx-2">
+                  <button className="flex-shrink-0 p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle>
+                      <circle cx="19" cy="12" r="2"></circle>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="px-4 py-3 border-t border-b transition ease-in-out duration-200 cursor-pointer hover:bg-gray-50">
+            <span className="text-sm text-twitter-blue tracking-wide">Show more</span>
+          </div>
+        </div>
       </div>
     </>
   )
