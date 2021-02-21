@@ -9,7 +9,7 @@ export default function Layout ({ Component, pageProps, chilren }) {
         <NavBar headerOptions={ Component.headerOptions }>
           { chilren }
         </NavBar>
-        <main className="flex-1 overflow-y-hidden">
+        <main className="flex-1 overflow-y-auto">
           <PerfectScroll chilren={ <Component { ...pageProps } /> } />
         </main>
         <Footer />
