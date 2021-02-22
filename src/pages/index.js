@@ -57,7 +57,7 @@ export default function HomePage () {
     {
       name: 'Hacker News',
       avatar: 'https://png.pngtree.com/png-vector/20200614/ourmid/pngtree-businessman-user-avatar-character-vector-illustration-png-image_2242909.jpg',
-      username: 'newsycombinator',
+      username: 'newsyr',
       created_at: '8h',
       posts: [
         {
@@ -73,7 +73,7 @@ export default function HomePage () {
     },
     {
       name: 'Suz Hinton',
-      avatar: 'https://lh3.googleusercontent.com/proxy/vrtatjDc1fvXBQ5XIOy3rFt75k0CqeTOOrtNUYnm3GLStiHWddfzexrS8AwSgSgmdQ9Er22qop57l8I0Oqor4VrJIL5jtnt0IyLD98pHhA_TIsEpGks2idI5ZKcISErOJQ',
+      avatar: 'https://images.vexels.com/media/users/3/145908/preview2/52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg',
       username: 'noopkat',
       created_at: '14h',
       posts: [
@@ -120,12 +120,12 @@ export default function HomePage () {
             </div>
             <div className="flex flex-col w-full -m-2">
               <div className="flex items-center justify-between text-base text-gray-500">
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-1">
                   <a href="#" className="font-semibold text-gray-900 hover:underline clamp-1">{ user.name }</a>
                   <a href="#" className="clamp-1">@{ user.username } &middot; <span className="hover:underline">{ user.created_at }</span></a>
                 </div>
-                <div className="-mx-2">
-                  <button className="flex-shrink-0 p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
+                <div className="flex-shrink-0 -mx-2">
+                  <button className="p-2 rounded-full focus:bg-twitter-active hover:text-twitter-blue focus:text-twitter-blue hover:bg-blue-50 focus:outline-none transition ease-in-out duration-200">
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                       <circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle>
                       <circle cx="19" cy="12" r="2"></circle>
@@ -134,9 +134,9 @@ export default function HomePage () {
                 </div>
               </div>
               <div className="text-base -my-0.5 pb-2 text-gray-700">
-                {user.posts.map((post, p) => (
+                {user.posts.map(({ title }, p) => (
                   <span key={p} className="whitespace-pre-wrap">
-                    { post.title }
+                    { title }
                   </span>
                 ))}
               </div>

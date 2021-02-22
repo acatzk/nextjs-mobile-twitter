@@ -1,14 +1,13 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
-export default function NotificationPage () {
+export default function NotificationPage (props) {
+
   return ( 
     <>
       <Head>
         <title>Notifications / Twitter</title>
       </Head>
-      <div>
-        Notifications
-      </div>
     </>
   )
 }
